@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/radishmouse/backend-intro/issues"
   },
-  "homepage": "https://github.com/radishmouse/backend-intro#readme"
+  "homepage": "https://github.com/radishmouse/backend-intro#readme",
+  "dependencies": {
+    "sentiment": "^5.0.2"
+  }
 }

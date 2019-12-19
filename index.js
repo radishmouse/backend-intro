@@ -2,18 +2,10 @@
 // to access the node File System
 // module.
 const fs = require('fs');
+const printer = require('./printer');
 
 // "argv" stands for "argument vector"
 // (a vector is basically an array)
 const fileName = process.argv[2];
 
-// Error-first callback
-function printContents(error, buffer) {
-    if (error) {
-        console.log(error);
-    } else {
-        console.log(buffer.toString());
-    }
-}
-
-fs.readFile(fileName, printContents);
+fs.readFile(fileName, printer.printSentiment);
