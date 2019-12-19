@@ -6,7 +6,6 @@ const Sentiment = require('sentiment');
 // Create a new Sentiment analyzer object/instance.
 const sentiment = new Sentiment();
 
-
 // Error-first callback
 function printContents(error, buffer) {
     if (error) {
@@ -33,6 +32,9 @@ function printSentiment(error, buffer) {
 
 // Make both available!
 module.exports = {
-    printContents: printContents,
-    printSentiment: printSentiment
+    // You can omit the colon and the value
+    // if the value is the same word
+    // as the key
+    printContents,
+    printSentiment
 };
