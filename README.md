@@ -84,3 +84,20 @@ function handleClick(event) {
 }
 myButton.addEventListener('click', handleClick);
 ```
+
+## What's an error-first callback?
+
+- A function that expects to receive any error information as the first argument
+- It's Node's way of forcing you to do basic error handling
+- It works because you can't "skip" arguments
+
+```js
+function printContents(error, buffer) {
+    if (error) {
+        console.log(error);
+    } else {
+        console.log(buffer.toString());
+    }
+}
+fs.readFile(fileName, printSentiment);
+```
