@@ -51,3 +51,36 @@
 - Database driven websites
     - User login
 - APIs
+
+## How do I start a node project?
+
+```sh
+npm init -y
+```
+## What does that do?
+
+- It creates a `package.json` file
+
+## What is `package.json`
+
+- It's the project "manifest"
+- A list of everything that your project needs in order to run.
+
+## What's a module?
+
+- It's code someone else wrote
+- It's code you wrote and saved in another file
+
+## How do you use a module?
+
+- Call the `require()` function
+- Pass it the name of the module
+
+## What's a callback?
+
+```js
+function handleClick(event) {
+    console.log('they clicked!')
+}
+myButton.addEventListener('click', handleClick);
+```
